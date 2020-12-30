@@ -13,7 +13,7 @@ def create(key,value,timeout=0):
         print("error: this key already exists") #error message1
     else:
         if(key.isalpha()):
-            if len(d)<(1024*1020*1024) and value<=(16*1024*1024): #constraints for file size less than 1GB and Jasonobject value less than 16KB 
+            if len(d)<(1024*1024*1024) and value<=(16*1024*1024): #constraints for file size less than 1GB and Jasonobject value less than 16KB 
                 if timeout==0:
                     l=[value,timeout]
                 else:
